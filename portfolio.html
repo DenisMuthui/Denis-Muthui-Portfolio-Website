@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Portfolio — Denis Muthui</title>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<header class="lc-nav scrolled" id="home">
+    <a href="#" class="lc-nav__logo">Denis Muthui<span>.</span></a>
+    <nav class="lc-nav__links" id="myTopnav">
+        <a href="portfolio.html" class="lc-nav__active">Portfolio</a>
+        <a href="about.html">About</a>
+    </nav>
+    <a href="#" class="lc-nav__cta">Let's Talk</a>
+    <button class="lc-hamburger" id="hamburger" aria-label="Toggle navigation" onclick="myFunction()">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<section class="port-hero" id="heroTop">
+    <div class="hero-slider" id="heroSlider" aria-hidden="true">
+        <div class="hero-slide active" style="background-image: url('imgs/DSC_8404.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('imgs/DSC_7804.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('imgs/denisclics profile photo.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('imgs/DSC_6995.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('imgs/DSC_6377.jpg')"></div>
+    </div>
+    <div class="port-hero__bg-text" aria-hidden="true">WORK</div>
+    <div class="page-container port-hero__content">
+        <div class="hero__eyebrow reveal-up" style="--d:0ms">
+            <span class="hero__eyebrow-line"></span>
+            Selected Projects &nbsp;·&nbsp; 2019 – 2026
+        </div>
+        <h1 class="port-hero__title reveal-up" style="--d:140ms">
+            Every Project.<br><em>Every brief.</em><br>Delivered.
+        </h1>
+        <div class="port-hero__meta reveal-up" style="--d:300ms">
+            <div class="port-hero__stat"><strong>80+</strong><span>Projects</span></div>
+            <div class="port-hero__divider"></div>
+            <div class="port-hero__stat"><strong>50+</strong><span>Clients</span></div>
+            <div class="port-hero__divider"></div>
+            <div class="port-hero__stat"><strong>6</strong><span>Disciplines</span></div>
+        </div>
+    </div>
+    <div class="port-hero__scroll" aria-hidden="true">
+        <span>Explore</span>
+        <div class="hero__scroll-line"></div>
+    </div>
+</section>
+
+<div class="filter-bar" id="filterBar">
+    <div class="page-container filter-bar__inner">
+        <button class="filter-btn active" data-filter="sports">Marketing Coordination</button>
+        <button class="filter-btn" data-filter="branding">Content Creation</button>
+        <button class="filter-btn" data-filter="poster">Analytics & Digital Performance</button>
+        <button class="filter-btn" data-filter="freelance">Freelance Projects</button>
+    </div>
+</div>
+
+<main class="gallery-main" id="galleryMain">
+
+    <!-- 01 MARKETING COORDINATION -->
+    <section class="gallery-section" data-category="sports" id="work">
+        <div class="page-container">
+            <div class="gallery-section__header">
+                <div class="gallery-section__title-wrap">
+                    <span class="gallery-section__num">01</span>
+                    <div>
+                        <h2 class="gallery-section__title">Marketing Coordination & Content Creation</h2>
+                        <p class="gallery-section__sub">Multi-channel campaigns, live activations, and brand strategy — executed.</p>
+                    </div>
+                </div>
+            </div>
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">Kiambu Golf Club</h2>
+                <p>As the official club photographer and marketing coordinator for 14 months, I covered 50+ corporate events end-to-end — from planning and shoot execution through to editing and publication. Every image was intentional, every caption strategic. The work spanned event photography, graphic design, social media management, and marketing campaign coordination.</p>
+            </section>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DenisMuthui2.JPEG" alt="Club Events">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Club Events Coverage</span></div></div>
+                </div>
+                <div class="gallery-item gallery-item--wide">
+                    <img src="imgs/DSC_6377.jpg" alt="Golf Tournaments">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Golf Tournaments</span></div></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgs/DSC_8757.jpg" alt="Club Sponsors">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Club Sponsors</span><span class="gallery-item__detail">ABSA Bank</span></div></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgs/DSC_8689.jpg" alt="Event Coverage">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Event Coverage</span></div></div>
+                </div>
+            </div>
+            <div class="case-social-links">
+                <p class="case-social-links__label"><i class="fa fa-arrow-up-right-from-square"></i> See the work live — accounts I managed</p>
+                <div class="case-social-links__grid">
+                    <a href="https://www.instagram.com/kiambugolfclub1/" target="_blank" rel="noopener" class="case-social-link case-social-link--ig">
+                        <div class="case-social-link__icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="case-social-link__body">
+                            <span class="case-social-link__platform">Instagram</span>
+                            <span class="case-social-link__handle">@kiambugolfclub</span>
+                            <span class="case-social-link__desc">Event photography, club life & member highlights</span>
+                        </div>
+                        <i class="fa fa-arrow-right case-social-link__arrow"></i>
+                    </a>
+                    <a href="https://www.facebook.com/kiambugolfclub" target="_blank" rel="noopener" class="case-social-link case-social-link--fb">
+                        <div class="case-social-link__icon"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="case-social-link__body">
+                            <span class="case-social-link__platform">Facebook</span>
+                            <span class="case-social-link__handle">Kiambu Golf Club</span>
+                            <span class="case-social-link__desc">Tournament coverage, sponsorship content & news</span>
+                        </div>
+                        <i class="fa fa-arrow-right case-social-link__arrow"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Results + working photo side by side -->
+            <div class="case-results-split">
+
+                <!-- Image -->
+                <div class="case-work-photo case-work-photo--side reveal-up">
+                    <img src="imgs/instagram grid maker.png" alt="Denis Muthui at work — Kiambu Golf Club">
+                    <div class="case-work-photo__caption">
+                        <i class="fa fa-camera"></i>Kiambu Golf Club Instagram Page — 2022–2023
+                    </div>
+                </div>
+
+                <!-- Results Achieved -->
+                <section class="case-section reveal-up">
+                    <h2 class="case-section__title">Results Achieved</h2>
+                    <p class="case-section__intro">14 months of consistent delivery — here's what the numbers looked like.</p>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <div class="case-metric__head"><span class="case-metric__label">Social Media Engagement Growth</span><span class="case-metric__value">30%</span></div>
+                            <div class="case-metric__track"><div class="case-metric__fill" style="--w:30%"></div></div>
+                            <span class="case-metric__note">Instagram & Facebook — measured over 14 months</span>
+                        </div>
+                        <div class="case-metric">
+                            <div class="case-metric__head"><span class="case-metric__label">Corporate Events Covered</span><span class="case-metric__value">50+</span></div>
+                            <div class="case-metric__track"><div class="case-metric__fill" style="--w:85%"></div></div>
+                            <span class="case-metric__note">Photographed, edited, and published end-to-end</span>
+                        </div>
+                        <div class="case-metric">
+                            <div class="case-metric__head"><span class="case-metric__label">Marketing Assets Per Month</span><span class="case-metric__value">15/mo</span></div>
+                            <div class="case-metric__track"><div class="case-metric__fill" style="--w:75%"></div></div>
+                            <span class="case-metric__note">Print and digital — posters, graphics, photography</span>
+                        </div>
+                        <div class="case-metric">
+                            <div class="case-metric__head"><span class="case-metric__label">On-Time Delivery Rate</span><span class="case-metric__value">100%</span></div>
+                            <div class="case-metric__track"><div class="case-metric__fill" style="--w:100%"></div></div>
+                            <span class="case-metric__note">Zero missed deadlines across 14 months</span>
+                        </div>
+                        <div class="case-metric">
+                            <div class="case-metric__head"><span class="case-metric__label">Content Consistency</span><span class="case-metric__value">14mo</span></div>
+                            <div class="case-metric__track"><div class="case-metric__fill case-metric__fill--accent" style="--w:95%"></div></div>
+                            <span class="case-metric__note">Uninterrupted publishing cadence throughout</span>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <div class="case-section__divider"></div>
+            <!-- Event Posters -->
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">Event Posters</h2>
+                <p>Designed monthly for tournaments, member birthday celebrations, and sponsor activations. Each poster maintained a consistent club brand while being refreshed seasonally to keep the feed current and engaging.</p>
+            </section>
+            <div class="gallery-grid gallery-grid--portrait">
+                <div class="gallery-item">
+                    <img src="imgs/JUNE BITHDAY BABIES POSTER DESIGN.jpg" alt="Birthday Celebration">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Birthday Celebration</span><span class="gallery-item__detail">June 2022</span></div></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgs/KIAMBU LADIES INVITATIONAL.jpg" alt="Ladies Invitational">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Ladies Invitational</span><span class="gallery-item__detail">Tournament Poster</span></div></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgs/MARCH LADIES MEDAL.jpg" alt="March Ladies Medal">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">March Ladies Medal</span><span class="gallery-item__detail">Event Poster</span></div></div>
+                </div>
+            </div>
+
+            <!-- Announcements & Bulletins -->
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">Announcements & Bulletins</h2>
+                <p>Weekly bulletin covers and member announcements kept the club community informed. Produced consistently on a weekly schedule alongside event coverage and campaign work.</p>
+            </section>
+            <div class="gallery-grid gallery-grid--portrait">
+                <div class="gallery-item">
+                    <img src="imgs/Bulltin Cover week 9.png" alt="Bulletin Cover">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Bulletin Cover</span><span class="gallery-item__detail">Week 9</span></div></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgs/Bulletin_cover.png" alt="Bulletin Cover">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Bulletin Cover</span><span class="gallery-item__detail">Weekly Edition</span></div></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgs/MICHEAL KARANGA FIRED UP AT COAST-01.jpg" alt="Member Spotlight">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Member Spotlight</span><span class="gallery-item__detail">Announcement</span></div></div>
+                </div>
+            </div>
+
+            <!-- Event Sponsors -->
+
+            <div class="case-section__divider"></div>
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">Event Campaigns and Activations</h2>
+                <p>Collaboration with event sponsors to create compelling content, run campaigns that resonates with the target audience and drives engagement.</p>
+            </section>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/Activations.jpg" alt="Studio Portrait">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Activations</span><span class="gallery-item__detail">Tusker Sponsor · 2023</span></div></div>
+                </div>
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/activations2.jpg" alt="Editorial Spread">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Activations</span><span class="gallery-item__detail">Glenlivet Sponsor · 2023</span></div></div>
+                </div>
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/activations3.jpg" alt="Editorial">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Activations</span><span class="gallery-item__detail">Sierra Lager · 2023</span></div></div>
+                </div>
+            </div>
+
+            <div class="case-section__divider"></div>
+
+            <!-- Motion Graphics -->
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">Motion Graphics</h2>
+                <p>Promotional video content produced for the club's social media channels — combining event photography, branded typography, and motion graphics to create short-form content that performed on Instagram and Facebook.</p>
+            </section>
+
+            <div class="case-video-embed reveal-up">
+                <div class="case-video-embed__wrap">
+                    <!-- Replace the src with your actual YouTube embed URL -->
+                    <!-- Get it from YouTube > Share > Embed, copy just the src value -->
+                    <iframe
+                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                        title="Motion Graphics — Kiambu Golf Club"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Cu5B1xloZgd/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Cu5B1xloZgd/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Cu5B1xloZgd/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Kiambu Golf club official (@kiambugolfclub1)</a></p></div></blockquote>
+                    
+                    <script async src="//www.instagram.com/embed.js"></script>
+                </div>
+                <div class="case-video-embed__caption">
+                    <i class="fa fa-film"></i>
+                    Promotional motion graphics — Kiambu Golf Club · Adobe Premiere Pro & After Effects
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02 SOCIAL MEDIA MANAGEMENT -->
+    <section class="gallery-section gallery-section--alt" data-category="branding">
+        <div class="page-container">
+            <div class="gallery-section__header">
+                <div class="gallery-section__title-wrap">
+                    <span class="gallery-section__num">02</span>
+                    <div>
+                        <h2 class="gallery-section__title">Crowned By Ronnie</h2>
+                        <p class="gallery-section__sub">Strategy, content, and community — managed end to end.</p>
+                    </div>
+                </div>
+            </div>
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">The Brief</h2>
+                <p>Crowned By Ronnie is a hair and beauty brand built around editorial photography and a strong social presence. The brief was to produce a suite of in-studio photography that could sustain a consistent publishing cadence across Instagram — keeping the brand's aesthetic elevated, consistent, and commercially appealing.</p>
+            </section>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DSC_7804.jpg" alt="Content Creation">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Content Creation</span><span class="gallery-item__detail">Crowned By Ronnie · 2023</span></div></div>
+                </div>
+                <div class="gallery-item gallery-item--wide">
+                    <img src="imgs/DSC_7820.jpg" alt="Brand Visual">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Brand Visual</span><span class="gallery-item__detail">Crowned By Ronnie · 2023</span></div></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgs/DSC_7930.jpg" alt="Editorial">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Editorial</span><span class="gallery-item__detail">2023</span></div></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgs/DSC_7869.jpg" alt="Styled Shot">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Styled Shot</span><span class="gallery-item__detail">2023</span></div></div>
+                </div>
+            </div>
+            <div class="case-section__divider"></div>
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">In-Studio Photography</h2>
+                <p>All photography was produced in studio — controlled lighting, intentional composition, and a consistent edit style that aligned to the brand's premium aesthetic. Each image was optimised for both feed posts and stories.</p>
+            </section>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DSC_6995.jpg" alt="Studio Portrait">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Studio Portrait</span><span class="gallery-item__detail">Crowned By Ronnie · 2023</span></div></div>
+                </div>
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DSC_8072.jpg" alt="Editorial Spread">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Editorial Spread</span><span class="gallery-item__detail">Studio Session · 2023</span></div></div>
+                </div>
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DSC_8137.jpg" alt="Editorial">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Editorial</span><span class="gallery-item__detail">Studio · 2023</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03 ANALYTICS & DIGITAL PERFORMANCE -->
+    <section class="gallery-section" data-category="poster">
+        <div class="page-container">
+
+            <div class="gallery-section__header">
+                <div class="gallery-section__title-wrap">
+                    <span class="gallery-section__num">03</span>
+                    <div>
+                        <h2 class="gallery-section__title">Analytics & Digital Performance</h2>
+                        <p class="gallery-section__sub">Data-backed content — real numbers from real platforms.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">Personal Brand — TikTok</h2>
+                <p>Building in public means being accountable to the numbers. These are live analytics from my personal TikTok account — tracking follower growth, LIVE performance, engagement, and reach as I document the journey from creative professional to marketing full-stack developer.</p>
+            </section>
+
+            <!-- PLATFORM LINKS -->
+            <div class="case-social-links">
+                <p class="case-social-links__label">
+                    <i class="fa fa-arrow-up-right-from-square"></i>
+                    Follow the growth in real time
+                </p>
+                <div class="case-social-links__grid">
+                    <a href="https://www.tiktok.com/@tylerdenismuthui"
+                    target="_blank" rel="noopener"
+                    class="case-social-link case-social-link--tt">
+                        <div class="case-social-link__icon">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                        <div class="case-social-link__body">
+                            <span class="case-social-link__platform">TikTok</span>
+                            <span class="case-social-link__handle">@denismuthui</span>
+                            <span class="case-social-link__desc">Building in public — marketing, tech & the journey</span>
+                        </div>
+                        <i class="fa fa-arrow-right case-social-link__arrow"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="case-section__divider"></div>
+
+            <!-- ANALYTICS SCREENSHOT GRID -->
+            <!-- Replace each src with your actual TikTok analytics screenshots -->
+            <div class="analytics-grid">
+
+                <div class="analytics-item">
+                    <img src="imgs/Tiktok Overview.png" alt="Follower Growth">
+                    <div class="analytics-item__label">
+                        <i class="fa fa-users"></i>
+                        Follower Growth
+                    </div>
+                </div>
+
+                <div class="analytics-item">
+                    <img src="imgs/IMG_3559.PNG" alt="LIVE Statistics">
+                    <div class="analytics-item__label">
+                        <i class="fa fa-circle" style="color:#ff4444; font-size:0.5rem;"></i>
+                        LIVE Statistics
+                    </div>
+                </div>
+
+                <div class="analytics-item">
+                    <img src="imgs/IMG_3566.PNG" alt="Reach & Impressions">
+                    <div class="analytics-item__label">
+                        <i class="fa fa-chart-line"></i>
+                        Reach & Impressions
+                    </div>
+                </div>
+
+                <div class="analytics-item">
+                    <img src="imgs/IMG_3575.PNG" alt="Engagement Rate">
+                    <div class="analytics-item__label">
+                        <i class="fa fa-heart"></i>
+                        Engagement Rate
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="case-section__divider"></div>
+
+            <!-- KEY METRICS -->
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">Key Metrics</h2>
+                <p class="case-section__intro">Figures from recent LIVE sessions and content performance — updated as the account grows.</p>
+
+                <div class="case-metrics">
+                    <div class="case-metric">
+                        <div class="case-metric__head">
+                            <span class="case-metric__label">New Followers — Last 7 Days</span>
+                            <span class="case-metric__value">+26</span>
+                        </div>
+                        <div class="case-metric__track">
+                            <div class="case-metric__fill" style="--w:65%"></div>
+                        </div>
+                        <span class="case-metric__note">Organic growth through LIVE sessions and content</span>
+                    </div>
+
+                    <div class="case-metric">
+                        <div class="case-metric__head">
+                            <span class="case-metric__label">LIVE Interactions</span>
+                            <span class="case-metric__value">10K per Live</span>
+                        </div>
+                        <div class="case-metric__track">
+                            <div class="case-metric__fill" style="--w:70%"></div>
+                        </div>
+                        <span class="case-metric__note">Comments, reactions, and shares during LIVE broadcasts</span>
+                    </div>
+
+                    <div class="case-metric">
+                        <div class="case-metric__head">
+                            <span class="case-metric__label">Profile Views</span>
+                            <span class="case-metric__value">2159 Views</span>
+                        </div>
+                        <div class="case-metric__track">
+                            <div class="case-metric__fill" style="--w:55%"></div>
+                        </div>
+                        <span class="case-metric__note">Unique profile visits — last 28 days</span>
+                    </div>
+
+                    <div class="case-metric">
+                        <div class="case-metric__head">
+                            <span class="case-metric__label">Video Engagement Rate</span>
+                            <span class="case-metric__value">26.6K Likes</span>
+                        </div>
+                        <div class="case-metric__track">
+                            <div class="case-metric__fill case-metric__fill--accent" style="--w:60%"></div>
+                        </div>
+                        <span class="case-metric__note">Likes, comments, and shares as a % of views</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">What This Demonstrates</h2>
+                <ul class="case-list">
+                    <li>Content strategy applied to personal brand — not just client work</li>
+                    <li>Understanding of TikTok algorithm — LIVE, posting cadence, and engagement</li>
+                    <li>Analytics interpretation — reading data and adjusting strategy accordingly</li>
+                    <li>Community management — real-time engagement during LIVE broadcasts</li>
+                    <li>Consistent publishing — building an audience from zero</li>
+                </ul>
+            </section>
+
+        </div>
+    </section>
+
+    <!-- 04 FREELANCE PROJECTS -->
+    <section class="gallery-section gallery-section--alt" data-category="freelance">
+        <div class="page-container">
+            <div class="gallery-section__header">
+                <div class="gallery-section__title-wrap">
+                    <span class="gallery-section__num">04</span>
+                    <div>
+                        <h2 class="gallery-section__title">Freelance Projects</h2>
+                        <p class="gallery-section__sub">Private clients across portrait, product, and commercial photography.</p>
+                    </div>
+                </div>
+            </div>
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">In-Studio Photography</h2>
+                <p>Studio portrait and editorial work for private clients — from fashion and lifestyle shoots to personal branding sessions. Each session was planned around the client's specific goals, with a controlled lighting setup and a post-production workflow that delivered polished, social-ready images.</p>
+            </section>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DSC_8013.jpg" alt="Lifestyle Portrait">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Lifestyle Portrait</span><span class="gallery-item__detail">Studio · 2023</span></div></div>
+                </div>
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DSC_5200.jpg" alt="Editorial Spread">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Editorial Spread</span><span class="gallery-item__detail">Studio Session · 2023</span></div></div>
+                </div>
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DSC_2542.jpg" alt="Studio Editorial">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Studio Editorial</span><span class="gallery-item__detail">2023</span></div></div>
+                </div>
+            </div>
+            <div class="case-section__divider"></div>
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">Product Photography</h2>
+                <p>Commercial product photography for small businesses and independent brands — capturing products in a way that communicates quality, drives purchase intent, and gives clients assets they can use across their website, social media, and advertising.</p>
+            </section>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DSC_3320s.JPG" alt="Product Shoot">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Product Shoot</span><span class="gallery-item__detail">Commercial · 2023</span></div></div>
+                </div>
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DSC_3325.JPG" alt="Product Detail">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Product Detail</span><span class="gallery-item__detail">Commercial · 2023</span></div></div>
+                </div>
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DSC_3337.jpg" alt="Product Lifestyle">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Product Lifestyle</span><span class="gallery-item__detail">Commercial · 2023</span></div></div>
+                </div>
+            </div>
+
+            <div class="case-section__divider"></div>
+
+            <!-- Events -->
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">Corporate Events</h2>
+                <p>Event photography demands anticipation — you cannot restage a handshake, a laugh, or a speech. I arrive early, understand the programme, and position myself to capture the moments that matter before they happen. Every event is delivered as a complete gallery within 48 hours, ready for immediate social use.</p>
+            </section>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DSC_0164.jpg" alt="Business Society Event">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Business Society</span><span class="gallery-item__detail">Corporate Event · 2024</span></div></div>
+                </div>
+                <div class="gallery-item gallery-item--wide">
+                    <img src="imgs/DSC_0575.jpg" alt="Event Coverage">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Event Coverage</span><span class="gallery-item__detail">Corporate · 2024</span></div></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgs/DSC_0527.jpg" alt="Attendees">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Attendees</span><span class="gallery-item__detail">2024</span></div></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgs/DSC_0558.jpg" alt="Speaking Panel">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Speaking Panel</span><span class="gallery-item__detail">2024</span></div></div>
+                </div>
+            </div>
+            <div class="case-section__divider"></div>
+
+            <!-- Social Events -->
+            <section class="case-section reveal-up">
+                <h2 class="case-section__title">Social Events</h2>
+                <p>Event photography demands anticipation — you cannot restage a handshake, a laugh, or a speech. I arrive early, understand the programme, and position myself to capture the moments that matter before they happen. Every event is delivered as a complete gallery within 48 hours, ready for immediate social use.</p>
+            </section>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--tall">
+                    <img src="imgs/DSC_7497.jpg" alt="Birthday Party">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Birthday Party</span><span class="gallery-item__detail">Social Event · 2023</span></div></div>
+                </div>
+                <div class="gallery-item gallery-item--wide">
+                    <img src="imgs/DSC_7495.jpg" alt="Event Coverage">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Event Coverage</span><span class="gallery-item__detail">Social · 2023</span></div></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgs/DSC_7322.jpg" alt="Attendees">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Attendees</span><span class="gallery-item__detail">2023</span></div></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgs/DSC_7427.jpg" alt="Speaking Panel">
+                    <div class="gallery-item__overlay"><div class="gallery-item__info"><span class="gallery-item__label">Highlights</span><span class="gallery-item__detail">2023</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<section class="cta-band" id="contact">
+    <div class="cta-band__bg" aria-hidden="true">COLLAB</div>
+    <div class="page-container cta-band__inner">
+        <p class="section-tag section-tag--light">Start a project</p>
+        <h2 class="cta-band__title">Have a brief<br><em>in mind?</em></h2>
+        <p class="cta-band__sub">Let's talk strategy, visuals, or both. No fluff — just results.</p>
+        <a href="mailto:denismuthui@outlook.com" class="btn-primary btn-primary--light">Get in Touch</a>
+    </div>
+</section>
+
+<footer class="lc-footer">
+    <div class="page-container lc-footer__top">
+        <div class="lc-footer__brand">
+            <span class="lc-footer__logo">DM<span>.</span></span>
+            <p>Visual storytelling rooted in<br>Nairobi, felt everywhere.</p>
+        </div>
+        <nav class="lc-footer__nav">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="lc-footer__social">
+            <a href="https://www.instagram.com/tyler_denis_muthui/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/muthui-denis" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@denismuthui" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+    <div class="lc-footer__bottom page-container">
+        <p>&copy; 2026 Denis Muthui. All rights reserved.</p>
+        <p>Designed with intention.</p>
+    </div>
+</footer>
+
+<a id="backToTop" href="#home" class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></a>
+
+<script>
+(function() {
+    const slider = document.getElementById('heroSlider');
+    if (!slider) return;
+    const slides = slider.querySelectorAll('.hero-slide');
+    if (!slides.length) return;
+    let current = 0, timer = null;
+    const dotsWrap = document.createElement('div');
+    dotsWrap.className = 'hero-slider-dots';
+    slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'hero-slider-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+        dot.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(dot);
+    });
+    slider.appendChild(dotsWrap);
+    function updateDots() { dotsWrap.querySelectorAll('.hero-slider-dot').forEach((d,i)=>d.classList.toggle('active',i===current)); }
+    function goTo(index) { slides[current].classList.remove('active'); current=(index+slides.length)%slides.length; slides[current].classList.add('active'); updateDots(); }
+    function startTimer() { timer=setInterval(()=>goTo(current+1),5000); }
+    function stopTimer()  { clearInterval(timer); }
+    startTimer();
+    const heroSection=slider.closest('section');
+    //if(heroSection){ heroSection.addEventListener('mouseenter',stopTimer); heroSection.addEventListener('mouseleave',startTimer); }
+})();
+
+const $curP=document.getElementById('cursor'), $folP=document.getElementById('cursorFollower');
+let mxP=0,myP=0,fxP=0,fyP=0;
+document.addEventListener('mousemove',e=>{ mxP=e.clientX; myP=e.clientY; $curP.style.transform=`translate(${mxP-6}px,${myP-6}px)`; });
+(function tickP(){ fxP+=(mxP-fxP)*0.1; fyP+=(myP-fyP)*0.1; $folP.style.transform=`translate(${fxP-18}px,${fyP-18}px)`; requestAnimationFrame(tickP); })();
+document.querySelectorAll('a,button,.gallery-item').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{ $curP.classList.add('hov'); $folP.classList.add('hov'); });
+    el.addEventListener('mouseleave',()=>{ $curP.classList.remove('hov'); $folP.classList.remove('hov'); });
+});
+
+function myFunction(){
+    const nav=document.getElementById('myTopnav'), burger=document.getElementById('hamburger');
+    if(nav) nav.classList.toggle('responsive');
+    if(burger) burger.classList.toggle('open');
+    document.querySelectorAll('#myTopnav a').forEach(a=>{ a.onclick=()=>{ nav.classList.remove('responsive'); if(burger) burger.classList.remove('open'); }; });
+}
+
+window.addEventListener('scroll',()=>{
+    const nav=document.querySelector('.lc-nav');
+    if(nav) nav.classList.toggle('scrolled',window.scrollY>60);
+    const bttP=document.getElementById('backToTop');
+    if(bttP) bttP.style.display=window.scrollY>300?'flex':'none';
+    /* FIX: only make filter bar sticky once user has scrolled past the hero */
+    const fbP=document.getElementById('filterBar');
+    const heroEl=document.getElementById('heroTop');
+    if(fbP && heroEl){
+        fbP.classList.toggle('filter-bar--stuck', heroEl.getBoundingClientRect().bottom <= 60);
+    }
+});
+
+const obsP=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); obsP.unobserve(e.target); }});
+},{ threshold:0.08, rootMargin:'0px 0px -10px 0px' });
+document.querySelectorAll('.reveal-up,.case-section,.case-result,.gallery-item,.case-metric').forEach(el=>obsP.observe(el));
+
+document.addEventListener('DOMContentLoaded', function() {
+    const btns=document.querySelectorAll('.filter-btn');
+    const sections=document.querySelectorAll('.gallery-section');
+    const validCats=['sports','branding','poster','freelance','wedding'];
+    let userClicked=false;
+
+    function applyFilter(filter) {
+        btns.forEach(b=>b.classList.remove('active'));
+        const activeBtn=document.querySelector(`.filter-btn[data-filter="${filter}"]`);
+        if(activeBtn) activeBtn.classList.add('active');
+        sections.forEach(section=>{
+            if(filter==='all'||section.dataset.category===filter){
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+        });
+        if(filter!=='all' && userClicked){
+            const target=document.querySelector(`.gallery-section[data-category="${filter}"]`);
+            if(target) setTimeout(()=>target.scrollIntoView({behavior:'smooth',block:'start'}),100);
+        }
+    }
+
+    btns.forEach(btn=>btn.addEventListener('click',()=>{ userClicked=true; applyFilter(btn.dataset.filter); }));
+
+    const hash=window.location.hash.replace('#','');
+    if(hash && validCats.includes(hash)){
+        applyFilter(hash);
+    } else {
+        applyFilter('sports');
+    }
+});
+</script>
+</body>
+</html>

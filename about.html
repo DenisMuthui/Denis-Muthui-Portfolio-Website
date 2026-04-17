@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="about.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>About — Denis Muthui</title>
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- NAV -->
+<header class="lc-nav scrolled" id="home">
+    <a href="#" class="lc-nav__logo">Denis Muthui<span>.</span></a>
+    <nav class="lc-nav__links" id="myTopnav">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html" class="lc-nav__active">About</a>
+    </nav>
+    <a href="#" class="lc-nav__cta">Let's Talk</a>
+    <button class="lc-hamburger" id="hamburger" aria-label="Toggle navigation" onclick="myFunction()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="about-hero">
+
+    <!-- HERO BACKGROUND SLIDER -->
+    <div class="hero-slider" id="heroSlider" aria-hidden="true">
+        <div class="hero-slide active" style="background-image: url('imgs/DSC_5510.JPG'); background-position: top;"></div>
+        <div class="hero-slide" style="background-image: url('imgs/branding-01-thumb-01.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('imgs/BANNERS-01.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('imgs/DenisMuthui.JPEG')"></div>
+        <div class="hero-slide" style="background-image: url('imgs/JF-6\ N\ 2.jpg'); background-position: top;"></div>
+    </div>
+    <!-- END HERO BACKGROUND SLIDER -->
+
+    <div class="about-hero__bg-text" aria-hidden="true">ABOUT</div>
+    <div class="about-hero__bg-text" aria-hidden="true">ABOUT</div>
+    <div class="page-container about-hero__content">
+        <div class="hero__eyebrow reveal-up" style="--d:0ms">
+            <span class="hero__eyebrow-line"></span> Montréal, Canada 
+        </div>
+        <h1 class="about-hero__title reveal-up" style="--d:140ms">
+            The person<br><em>behind the lens.</em>
+        </h1>
+        <p class="about-hero__sub reveal-up" style="--d:280ms">
+            <div class="about-hero__stat">
+            <span>Marketing Coordinator &nbsp;·&nbsp; Visual Creative &nbsp;·&nbsp; Bilingual FR/EN</span>
+            </div>
+        </p>
+        <div class="about-hero__meta reveal-up" style="--d:300ms">
+            <div class="about-hero__stat"><strong>Bachelor's Graduate</strong><span>International Business Admin</span></div>
+            <div class="about-hero__divider"></div>
+            <div class="about-hero__stat"><strong>2 YEAR</strong><span>Post-grad Certificates</span></div>
+            <div class="about-hero__divider"></div>
+            <div class="about-hero__stat"><strong>3.6 GPA</strong><span>Academic Performance</span></div>
+            <div class="about-hero__divider"></div>
+            <div class="about-hero__stat"><strong>honours</strong><span>College Graduate</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-band" id="contact">
+    <div class="cta-band__bg" aria-hidden="true">HELLO</div>
+    <div class="page-container cta-band__inner">
+        <p class="section-tag section-tag--light">Let's collaborate</p>
+        <h2 class="cta-band__title">Ready to see<br><em>the work?</em></h2>
+        <p class="cta-band__sub">Browse the portfolio and see how ideas become impact.</p>
+        <a href="portfolio.html" class="btn-primary btn-primary--light">View Portfolio</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="lc-footer">
+    <div class="page-container lc-footer__top">
+        <div class="lc-footer__brand">
+            <span class="lc-footer__logo">DM<span>.</span></span>
+            <p>Visual storytelling rooted in<br>Nairobi, felt everywhere.</p>
+        </div>
+        <nav class="lc-footer__nav">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="lc-footer__social">
+            <a href="https://www.instagram.com/tyler_denis_muthui/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com/" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+    <div class="lc-footer__bottom page-container">
+        <p>&copy; 2026 Denis Muthui. All rights reserved.</p>
+        <p>Designed with intention.</p>
+    </div>
+</footer>
+
+<a id="backToTop" href="#home" class="back-to-top" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+</a>
+
+<script>
+/* HERO BACKGROUND SLIDER */
+(function() {
+    const slider = document.getElementById('heroSlider');
+    if (!slider) return;
+    const slides = slider.querySelectorAll('.hero-slide');
+    if (!slides.length) return;
+    let current = 0, timer = null;
+    const dotsWrap = document.createElement('div');
+    dotsWrap.className = 'hero-slider-dots';
+    slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'hero-slider-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+        dot.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(dot);
+    });
+    slider.appendChild(dotsWrap);
+    function updateDots() {
+        dotsWrap.querySelectorAll('.hero-slider-dot').forEach((d, i) => {
+            d.classList.toggle('active', i === current);
+        });
+    }
+    function goTo(index) {
+        slides[current].classList.remove('active');
+        current = (index + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        updateDots();
+    }
+    function startTimer() { timer = setInterval(() => goTo(current + 1), 5000); }
+    function stopTimer()  { clearInterval(timer); }
+    startTimer();
+    const heroSection = slider.closest('section');
+    if (heroSection) {
+        // heroSection.addEventListener('mouseenter', stopTimer);
+        // heroSection.addEventListener('mouseleave', startTimer);
+    }
+})();
+/* END HERO BACKGROUND SLIDER */
+/* ── Custom Cursor ── */
+const $curA = document.getElementById('cursor');
+const $folA = document.getElementById('cursorFollower');
+let mxA=0,myA=0,fxA=0,fyA=0;
+document.addEventListener('mousemove', e=>{
+    mxA=e.clientX; myA=e.clientY;
+    $curA.style.transform=`translate(${mxA-6}px,${myA-6}px)`;
+});
+(function tickA(){
+    fxA+=(mxA-fxA)*0.1; fyA+=(myA-fyA)*0.1;
+    $folA.style.transform=`translate(${fxA-18}px,${fyA-18}px)`;
+    requestAnimationFrame(tickA);
+})();
+document.querySelectorAll('a,button,.comp-card,.timeline__item,.journey-disc').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{ $curA.classList.add('hov'); $folA.classList.add('hov'); });
+    el.addEventListener('mouseleave',()=>{ $curA.classList.remove('hov'); $folA.classList.remove('hov'); });
+});
+
+/* ── Nav hamburger ── */
+function myFunction(){
+    const nav    = document.getElementById('myTopnav');
+    const burger = document.getElementById('hamburger');
+    if(nav)    nav.classList.toggle('responsive');
+    if(burger) burger.classList.toggle('open');
+    document.querySelectorAll('#myTopnav a').forEach(a=>{
+        a.onclick = ()=>{
+            nav.classList.remove('responsive');
+            if(burger) burger.classList.remove('open');
+        };
+    });
+}
+
+/* ── Nav scroll style ── */
+window.addEventListener('scroll',()=>{
+    const nav = document.querySelector('.lc-nav');
+    if(nav) nav.classList.toggle('scrolled', window.scrollY > 60);
+    const bttA = document.getElementById('backToTop');
+    if(bttA) bttA.style.display = window.scrollY > 300 ? 'flex' : 'none';
+});
+
+/* ── Scroll Reveal ── */
+const obsA = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); obsA.unobserve(e.target); }});
+},{ threshold: 0.1, rootMargin: '0px 0px -10px 0px' });
+document.querySelectorAll('.reveal-up,.comp-card,.timeline__item,.journey-milestone,.journey-disc,.journey-yt-cta').forEach(el=>obsA.observe(el));
+</script>
+</body>
+</html>
